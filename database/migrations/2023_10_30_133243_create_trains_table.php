@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('company', 50)->nullable();
             $table->string('departure_station', 50)->nullable();
             $table->string('arrival_station', 50)->nullable();
-            $table->timestamp('departure_time')->nullable();
-            $table->timestamp('arrival_time')->nullable();
+            $table->time('departure_time')->nullable();
+            $table->time('arrival_time')->nullable();
             $table->mediumInteger('train_code')->nullable();
             $table->tinyInteger('carriages_number')->nullable();
             $table->boolean('on_time')->nullable();

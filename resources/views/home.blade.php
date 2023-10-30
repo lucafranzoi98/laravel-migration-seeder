@@ -8,6 +8,8 @@
    <title>Trains</title>
 </head>
 <body>
-   
+   @foreach ($trains as $train)
+      <div>{{$train->company}}</div>
+   @endforeach
 </body>
 </html>
